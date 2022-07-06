@@ -1,20 +1,21 @@
-// Clone Pop Ups
+// clone each pop up with delay
 // var i = 1
 
-// const popUpLoop = function () {
-//     const popupSection = document.querySelector("#pop-ups-container")
-//     const popup = document.querySelector('.popup-01')
+// function popUpLoopOne () {
+//     setTimeout(function () {
+//         const popupSection = document.querySelector("#pop-ups")
+//         const popup = document.querySelector('.popup')
 
-//     popupSection.appendChild(popup.cloneNode(true))
+//         popupSection.appendChild(popup.cloneNode(true))
 
-//     i++
+//         i++
 
-//     if (i < 20) {
-//         popUpLoop()
-//     }
+//         if (i < 5) {
+//             popUpLoopOne()
+//         }
+
+//     }, 150)
 // }
-
-// popUpLoop()
 
 // close functionality for all
 const popups = document.querySelectorAll('.popup')
@@ -26,7 +27,8 @@ popups.forEach(function(popup) {
     })
 })
 
-const isReducedPopUp = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+window.onload = function() {
+    const isReducedPopUp = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
 
 if (!!isReducedPopUp) {
     // Paused Animation
@@ -68,11 +70,31 @@ if (!!isReducedPopUp) {
     gsap.set(".popup-11", { scale: 0})
     gsap.to(".popup-11", { duration: 0.1, scale: 1, delay: 2.7 })
 
+    gsap.set(".popup-01-02", { scale: 0})
+    gsap.to(".popup-01-02", { duration: 0.1, scale: 1, delay: 3 })
 
+    gsap.set(".popup-02-02", { scale: 0})
+    gsap.to(".popup-02-02", { duration: 0.1, scale: 1, delay: 3.2 })
 
+    gsap.set(".popup-03-02", { scale: 0})
+    gsap.to(".popup-03-02", { duration: 0.1, scale: 1, delay: 3.5 })
 
+    gsap.set(".popup-04-02", { scale: 0})
+    gsap.to(".popup-04-02", { duration: 0.1, scale: 1, delay: 3.7 })
+
+    gsap.set(".popup-05-02", { scale: 0})
+    gsap.to(".popup-05-02", { duration: 0.1, scale: 1, delay: 3.9 })
+
+    gsap.set(".popup-06-02", { scale: 0})
+    gsap.to(".popup-06-02", { duration: 0.1, scale: 1, delay: 4.2 })
+
+    gsap.set(".popup-07-02", { scale: 0})
+    gsap.to(".popup-07-02", { duration: 0.1, scale: 1, delay: 4.5 })
+
+    gsap.set(".popup-08-02", { scale: 0})
+    gsap.to(".popup-08-02", { duration: 0.1, scale: 1, delay: 4.7 })
  }
-
+}
 
  // Pop Up Click Link Overlay
 //  const clickLink = document.querySelector('.click-link-01')
