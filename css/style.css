@@ -182,6 +182,11 @@ main nav ul li a {
 
     display: inline-block;
     position: relative;
+    transition: 1s;
+}
+
+main nav ul li a:hover {
+    color: #d5300f;
 }
 
 /* main nav ul li a::after {
