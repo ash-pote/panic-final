@@ -182,10 +182,9 @@ main nav ul li a {
 
     display: inline-block;
     position: relative;
-    color: #0087ca;
 }
 
-main nav ul li a::after {
+/* main nav ul li a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -196,12 +195,12 @@ main nav ul li a::after {
     background-color: #F02700;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-}
+} */
 
-main nav ul li a:hover::after {
+/* main nav ul li a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-}
+} */
 
 
 /*********************************************/
@@ -509,6 +508,7 @@ main nav ul li a {
 /* Pop Up General Style */
 .popup {
     position: absolute;
+    cursor: pointer;
 
     background-color: var(--black);
     border: solid 1px var(--red);
@@ -706,6 +706,22 @@ main nav ul li a {
     right: 54vw;
 }
 
+/************************************/
+/* Canvas Pop Ups */
+.popup-17 {
+    top: 50vh;
+    right: 14vw;
+    width: 18vw;
+    height: 12vw;
+}
+
+.popup-17 .pop-canvas {
+    height: 100%;
+    width: 100%;
+    /* background-color: orange; */
+    z-index: 2;
+}
+
 /* @everyone carousel */
 #pop-up-section .message-box {
     position: fixed;
@@ -825,7 +841,7 @@ main nav ul li a {
 #about-overlay {
     display: none;
     background-color: var(--black);
-    width: 600px;
+    width: 640px;
     height: 456px;
 
     border: 1px solid var(--red);
@@ -838,8 +854,8 @@ main nav ul li a {
 }
 
 #about-overlay h1 {
-    margin-bottom: 20px;
-    font-size: 32px;
+    margin-bottom: 24px;
+    font-size: 40px;
 }
 
 #about-overlay p {
@@ -852,7 +868,7 @@ main nav ul li a {
     flex-direction: column;
     /* align-items: center; */
     justify-content: center;
-    width: 600px;
+    width: 640px;
     height: 480px;
     padding: 0 32px;
     border-top: 1px solid var(--red);

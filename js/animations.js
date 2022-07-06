@@ -157,40 +157,40 @@ if (!!isReduced) {
 
 /////////////////////////////////////////
 // Countdown
-// const ejectBtn = document.querySelector('.eject-btn')
-// const countdownOverlay = document.querySelector('#countdown-overlay')
+const ejectBtn = document.querySelector('.eject-btn')
+const countdownOverlay = document.querySelector('#countdown-overlay')
 
-// const serverOverlay = document.querySelector('#server-overlay')
+const serverOverlay = document.querySelector('#server-overlay')
 
-// ejectBtn.addEventListener("click", function () {
-//     countdownOverlay.style.display = 'flex'
+ejectBtn.addEventListener("click", function () {
+    countdownOverlay.style.display = 'flex'
 
-//     // Countdown Number Animation
-//     let countdownNumberEl = document.getElementById('countdown-number');
-//     let countdown = 5;
+    // Countdown Number Animation
+    let countdownNumberEl = document.getElementById('countdown-number');
+    let countdown = 5;
 
-//     countdownNumberEl.textContent = countdown;
+    countdownNumberEl.textContent = countdown;
     
-//     const countdownInterval = setInterval(countdownTimer, 1000);
+    const countdownInterval = setInterval(countdownTimer, 1000);
 
-//     function stopInterval() {
-//         clearInterval(countdownInterval);
-//       }
+    function stopInterval() {
+        clearInterval(countdownInterval);
+      }
 
-//     function countdownTimer () {
-//         if (countdown === 0) {
-//             stopInterval()
+    function countdownTimer () {
+        if (countdown === 0) {
+            stopInterval()
 
-//             countdownOverlay.style.display = 'none'
+            countdownOverlay.style.display = 'none'
 
-//             serverOverlay.style.display = 'flex'
-//         } else {
-//             countdown = --countdown <= -1 ? 5 : countdown;
+            serverOverlay.style.display = 'flex'
+        } else {
+            countdown = --countdown <= -1 ? 5 : countdown;
 
-//             countdownNumberEl.textContent = countdown;
-//         }
-//     }
-// })
+            countdownNumberEl.textContent = countdown;
+        }
+    }
+})
 
 //////////////////////////////////////////
 // Flag
