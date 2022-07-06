@@ -12,10 +12,10 @@
     src: url(/Squarevetica-Regular.otf);
 }
 
-/* @font-face {
+@font-face {
     font-family: "ColdIcePlant-Mono";
     src: url(/ColdIcePlant-Mono.otf);
-} */
+}
 
 /* Pic Nic */
 @font-face {
@@ -701,7 +701,8 @@ main nav ul li a {
 }
 
 /* Pop Up 11 */
-.tiny .text-container {
+.facade .text-container {
+    font-family: "Facade";
     font-size: 2.5vw;
     padding: 1.5vw 1vw 1vw 1vw;
 }

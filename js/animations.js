@@ -37,22 +37,22 @@ const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true
 
 //////////////////////////////////////
 // timer animation
-// if (!!isReduced) {
-//     // Paused Animation
-// } else {
-//     const timer = document.querySelector('.timer');
+if (!!isReduced) {
+    // Paused Animation
+} else {
+    const timer = document.querySelector('.timer');
 
-//     let numberAnimate = anime({
-//         targets: timer,
-//         innerHTML: ["00:00:00"],
-//         round: 1,
-//         direction: 'alternate',
-//         easing: 'linear',
-//         duration: 3500,
-//         loop: true,
-//         autoplay: true,
-//     })
-// }
+    let numberAnimate = anime({
+        targets: timer,
+        innerHTML: ["00:00:00"],
+        round: 1,
+        direction: 'alternate',
+        easing: 'linear',
+        duration: 3500,
+        loop: true,
+        autoplay: true,
+    })
+}
 
 //////////////////////////////////////
 // about overlay
