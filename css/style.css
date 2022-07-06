@@ -989,6 +989,8 @@ main nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    z-index: 100;
 }
 
 #server-overlay h2 {
