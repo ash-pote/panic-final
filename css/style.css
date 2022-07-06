@@ -712,6 +712,49 @@ main nav ul li a {
     right: 54vw;
 }
 
+/* Pop Up Repeats */
+.popup-01-02 {
+    top: 18vh;
+    right: 14vw;
+    z-index: 10;
+}
+
+.popup-02-02 {
+    top: 60vh;
+    right: 37vw;
+    z-index: 11;
+}
+
+.popup-03-02 {
+    top: 53vh;
+    right: 51vw;
+    z-index: 12;
+}
+
+.popup-04-02 {
+    top: 24vh;
+    right: 4vw;
+    z-index: 13;
+}
+
+.popup-05-02 {
+    top: 13vh;
+    right: 39vw;
+    z-index: 14;
+}
+
+.popup-06-02 {
+    top: 57vh;
+    right: 10vw;
+    z-index: 15;
+}
+
+.popup-07-02 {
+    top: 57vh;
+    right: 10vw;
+    z-index: 15;
+}
+
 /************************************/
 /* Canvas Pop Ups */
 .popup-17 {
