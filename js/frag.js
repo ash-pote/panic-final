@@ -1,22 +1,15 @@
 const frag = `
-
 #ifdef GL_ES
 precision highp float;
 #endif
-
 #define MAX 6
-
 uniform float u_time;
 uniform vec2 u_resolution;
 uniform vec2 mouse;
-
 uniform sampler2D image1;
-
 varying vec3 v_normal;
 varying vec2 v_texcoord;
-
 #define NUM_OCTAVES 5
-
  vec2 aspect(vec2 uv, float texture_ratio, float canvas_ratio) {
     
     // if canvas is too portrait for the texture, stretch dwonwards
@@ -31,7 +24,6 @@ varying vec2 v_texcoord;
  
     return uv;
  }
-
 void main(void)
 {
     vec2 uv = v_texcoord;
@@ -52,6 +44,5 @@ void main(void)
     
     gl_FragColor = color;
 }
-
 
 `
