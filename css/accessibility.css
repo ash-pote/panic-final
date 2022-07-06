@@ -1,0 +1,14 @@
+@media (prefers-reduced-motion: reduce) {
+    /* Find Eject Flashing */
+    #column-2-sidebar .find-eject-container h3 {
+        animation: unset;
+    }
+
+    /* Countdown Overlay */
+    #countdown-overlay h5 {
+        animation: unset;
+    }
+    svg circle {
+        animation: unset;
+    }
+}

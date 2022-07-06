@@ -559,17 +559,17 @@ main nav ul li a {
     font-weight: 700;
     font-style: italic;
 
-    padding: 0 1.5vw 1vw 2vw;
+    padding: 0.5vw 1.5vw 1vw 2vw;
 }
 
 .new-message-img .text-container img {
     width: 13vw;
-    margin-top: 2px;
+    margin-top: 4px;
 }
 
 .popup-02 {
-    top: 16vh;
-    right: 6vw;
+    top: 26vh;
+    right: 10vw;
 }
 
 /* Pop Up 03 */
@@ -610,18 +610,33 @@ main nav ul li a {
     padding: 2vw 1vw 0.6vw 1vw;
 }
 
+.popup-04 {
+    top: 45vh;
+    right: 8vw;
+}
+
 /* Pop Up 05 */
 .FT88 .text-container {
     font-family: "FT88";
     font-size: 3.5vw;
-    padding: 1vw 1vw 1vw 1vw;
+    padding: 1vw 0.4vw 0.5vw 1vw;
+}
+
+.popup-05 {
+    top: 45vh;
+    right: 8vw;
+}
+
+.FT88 .text-container h2 {
+    animation: flashing 0.3s step-end infinite;
 }
 
 /* Pop Up 06 */
 .unread .text-container {
     font-family: "Sligoil";
-    font-size: 2vw;
-    padding: 1vw 1vw 1vw 1vw;
+    font-size: 1.7vw;
+    text-align: center;
+    padding: 2.4vw 3vw 2.4vw 3vw;
 }
 
 .popup-06 {
@@ -649,15 +664,15 @@ main nav ul li a {
 }
 
 .popup-08 {
-    top: 70vh;
+    top: 67vh;
     right: 20vw;
 }
 
 /* Pop Up 09 */
 .exclamation .text-container {
     font-family: "Squarevetica";
-    font-size: 13vw;
-    padding: 0vw 2.2vw 0.3vw 2.2vw;
+    font-size: 8vw;
+    padding: 1.2vw 1.7vw 1.2vw 1.7vw;
 }
 
 .exclamation .text-container p {
@@ -671,13 +686,24 @@ main nav ul li a {
 
 /* Pop Up 10 */
 .question .text-container {
-    font-size: 4vw;
-    padding: 0.5vw;
+    font-size: 2.5vw;
+    padding: 0.8vw 1vw;
 }
 
 .popup-10 {
-    top: 48vh;
-    right: 24vw;
+    top: 52vh;
+    right: 45vw;
+}
+
+/* Pop Up 11 */
+.tiny .text-container {
+    font-size: 2.5vw;
+    padding: 1.5vw 1vw 1vw 1vw;
+}
+
+.popup-11 {
+    top: 29vh;
+    right: 54vw;
 }
 
 /* @everyone carousel */

@@ -56,88 +56,88 @@ const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true
 
 //////////////////////////////////////
 // about overlay
-// const aboutLink = document.querySelector('.about-link')
-// const aboutOverlay = document.querySelector('#about-overlay')
-// const closeAbout = document.querySelector('#close-about')
+const aboutLink = document.querySelector('.about-link')
+const aboutOverlay = document.querySelector('#about-overlay')
+const closeAbout = document.querySelector('#close-about')
 
-// aboutLink.addEventListener("click", function () {
-//     aboutOverlay.style.display = 'flex'
+aboutLink.addEventListener("click", function () {
+    aboutOverlay.style.display = 'flex'
 
-//     gsap.set(aboutOverlay, { scale: 0})
-//     gsap.to(aboutOverlay, { duration: 0.3, scale: 1, delay: 0.5 })
-// })
+    gsap.set(aboutOverlay, { scale: 0})
+    gsap.to(aboutOverlay, { duration: 0.3, scale: 1, delay: 0.5 })
+})
 
-// closeAbout.addEventListener("click", function () {
-//     aboutOverlay.style.display = 'none'
+closeAbout.addEventListener("click", function () {
+    aboutOverlay.style.display = 'none'
 
-//     gsap.set(aboutOverlay, { scale: 1})
-//     gsap.to(aboutOverlay, { duration: 0.3, scale: 0, delay: 0.5 })
-// })
+    gsap.set(aboutOverlay, { scale: 1})
+    gsap.to(aboutOverlay, { duration: 0.3, scale: 0, delay: 0.5 })
+})
 
 //////////////////////////////////////
 /* New Message Carousel */
-// const carousels = document.querySelectorAll(".user-message-notification")
+const carousels = document.querySelectorAll(".user-message-notification")
 
-// if (!!isReduced) {
-//     carousels.forEach(carousel => {
-//         const spanTag = carousel.querySelector("span")
-//         const spanHeight = spanTag.clientHeight
+if (!!isReduced) {
+    carousels.forEach(carousel => {
+        const spanTag = carousel.querySelector("span")
+        const spanHeight = spanTag.clientHeight
     
-//         for (let i = 0; i < 40; i = i + 1) {
-//             carousel.appendChild(spanTag.cloneNode(true))
-//         }
-//     })
-//   } else {
-//     carousels.forEach(carousel => {
-//         const spanTag = carousel.querySelector("span")
-//         const spanHeight = spanTag.clientHeight
+        for (let i = 0; i < 40; i = i + 1) {
+            carousel.appendChild(spanTag.cloneNode(true))
+        }
+    })
+  } else {
+    carousels.forEach(carousel => {
+        const spanTag = carousel.querySelector("span")
+        const spanHeight = spanTag.clientHeight
     
-//         for (let i = 0; i < 40; i = i + 1) {
-//             carousel.appendChild(spanTag.cloneNode(true))
-//         }
+        for (let i = 0; i < 40; i = i + 1) {
+            carousel.appendChild(spanTag.cloneNode(true))
+        }
     
-//         const movementTimeline = gsap.timeline({
-//             repeat: -1
-//         })
+        const movementTimeline = gsap.timeline({
+            repeat: -1
+        })
     
-//         movementTimeline
-//         .set(carousel, { y: 0 })
-//         .to(carousel, { y: spanHeight, duration: 0.3, ease: "linear" })
-//     })
-// }
+        movementTimeline
+        .set(carousel, { y: 0 })
+        .to(carousel, { y: spanHeight, duration: 0.3, ease: "linear" })
+    })
+}
 
 //////////////////////////////////////
 /* @everyone Carousel */
-// const everyoneCarousels = document.querySelectorAll(".everyone-container h6")
+const everyoneCarousels = document.querySelectorAll(".everyone-container h6")
 
-// if (!!isReduced) { 
-//     // Paused Animation
-//     everyoneCarousels.forEach(ecarousel => {
-//         const everyoneSpanTag = ecarousel.querySelector("span")
-//         const everyoneSpanTagWidth = everyoneSpanTag.clientWidth
+if (!!isReduced) { 
+    // Paused Animation
+    everyoneCarousels.forEach(ecarousel => {
+        const everyoneSpanTag = ecarousel.querySelector("span")
+        const everyoneSpanTagWidth = everyoneSpanTag.clientWidth
     
-//         for (let i = 0; i < 12; i = i + 1) {
-//             ecarousel.appendChild(everyoneSpanTag.cloneNode(true))
-//         }
-//     })
-//  } else {
-//     everyoneCarousels.forEach(ecarousel => {
-//         const everyoneSpanTag = ecarousel.querySelector("span")
-//         const everyoneSpanTagWidth = everyoneSpanTag.clientWidth
+        for (let i = 0; i < 12; i = i + 1) {
+            ecarousel.appendChild(everyoneSpanTag.cloneNode(true))
+        }
+    })
+ } else {
+    everyoneCarousels.forEach(ecarousel => {
+        const everyoneSpanTag = ecarousel.querySelector("span")
+        const everyoneSpanTagWidth = everyoneSpanTag.clientWidth
     
-//         for (let i = 0; i < 12; i = i + 1) {
-//             ecarousel.appendChild(everyoneSpanTag.cloneNode(true))
-//         }
+        for (let i = 0; i < 12; i = i + 1) {
+            ecarousel.appendChild(everyoneSpanTag.cloneNode(true))
+        }
     
-//         const everyoneMovementTimeline = gsap.timeline({
-//             repeat: -1
-//         })
+        const everyoneMovementTimeline = gsap.timeline({
+            repeat: -1
+        })
         
-//         everyoneMovementTimeline
-//         .set(everyoneCarousels, { x: 0 })
-//         .to(everyoneCarousels, { x: 400, duration: 4, ease: "linear" })
-//     })
-// }
+        everyoneMovementTimeline
+        .set(everyoneCarousels, { x: 0 })
+        .to(everyoneCarousels, { x: 400, duration: 4, ease: "linear" })
+    })
+}
 
 //////////////////////////////////////
 /* orb animation */
