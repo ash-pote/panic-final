@@ -978,11 +978,13 @@ main nav ul li a {
 
 /* server overlay */
 #server-overlay {
-    display: none;
+    display: flex;
     position: absolute;
 
-    width: 700px;
-    height: 440px;
+    padding: 56px 88px 56px 88px;
+
+    /* width: 700px;
+    height: 440px; */
     background-color: var(--black);
     border: 1px solid var(--red);
 
@@ -1000,10 +1002,9 @@ main nav ul li a {
     line-height: 130%;
 }
 
-.servers-overlay-container {
-    display: flex;
+/* .servers-overlay-container {
     margin: 48px 0 56px 0;
-}
+} */
 
 .server-overlay-img-container {
     display: flex;
@@ -1011,13 +1012,30 @@ main nav ul li a {
     align-items: center;
 }
 
-.server-overlay-img-container:nth-child(1) {
-    margin-right: 32px;
+.server-middle-container {
+    display: flex;
+    margin: 40px 0 40px 0;
 }
 
-.server-overlay-img-container:nth-child(2) {
-    margin-left: 32px;
+.server-middle-container img {
+    width: 340px;
+    margin-right: 27px;
 }
+
+.servers-overlay-container {
+    margin-left: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* .server-overlay-img-container:nth-child(1) {
+    margin-right: 32px;
+} */
+
+/* .server-overlay-img-container:nth-child(2) {
+    margin-left: 32px;
+} */
 
 .server-overlay-img-container p {
     margin-left: 16px;
