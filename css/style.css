@@ -978,7 +978,7 @@ main nav ul li a {
 
 /* server overlay */
 #server-overlay {
-    display: flex;
+    display: none;
     position: absolute;
 
     padding: 56px 88px 56px 88px;
