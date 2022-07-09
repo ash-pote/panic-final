@@ -7,33 +7,28 @@ const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 renderer.setSize( (webglDiv.clientWidth) - 6, (webglDiv.clientHeight) - 6 );
 webglDiv.appendChild( renderer.domElement );
 
-const clock = new THREE.Clock()
 
-const uniforms = {
-    time: { value: clock.getElapsedTime() },
-    seed: { value: Math.random() }
-}
-
-const dpi = 20
-const geometry = new THREE.SphereGeometry(3, 2 * dpi, dpi);
-const material = new THREE.ShaderMaterial({ 
-    uniforms: uniforms,
+const dpi = 8
+const geometry = new THREE.SphereGeometry(3.3, dpi, dpi);
+const material = new THREE.ShaderMaterial( { 
+    color: 0xFF3E19,
     vertexShader: vert,
-    fragmentShader: frag
-    // color: 0xFF3E19,
-    // wireframe: true
-});
+    fragmentShader: frag,
+    wireframe: true
+} );
+
 const cube = new THREE.Mesh( geometry, material );
+// cube.rotation.x = 1;
+
 scene.add( cube );
 
-camera.position.z = 7;
+camera.position.z = 6.5;
 
 
 
 function animate() {
-    uniforms.time = { value: clock.getElapsedTime() }
-
 	requestAnimationFrame( animate );
+    cube.rotation.y += 0.01;
 	renderer.render( scene, camera );
 }
 

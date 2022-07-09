@@ -3,6 +3,14 @@
     #column-2-sidebar .find-eject-container h3 {
         animation: unset;
     }
+    
+    .FT88 .text-container h2 {
+        animation: unset;
+    }
+
+    #countdown-overlay h5 {
+        animation: unset;
+    }
 
     /* Countdown Overlay */
     #countdown-overlay h5 {
