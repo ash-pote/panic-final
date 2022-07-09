@@ -971,76 +971,76 @@ main nav ul li a {
 }
 
 .popup-11-05 {
-    top: 25vh;
-    right: 35vw;
+    top: 15vh;
+    right: 5vw;
     z-index: 27;
 }
 
-/*************/
+/***** Top Right ********/
 
 .popup-01-06 {
-    top: 40vh;
-    right: 40vw;
+    top: 4vh;
+    right: 4vw;
     z-index: 17;
 }
 
 .popup-02-06 {
-    bottom: 5vh;
-    left: 15vw;
+    top: 15vh;
+    right: 25vw;
     z-index: 18;
 }
 
 .popup-03-06 {
-    top: 44vh;
-    right: -6vw;
+    top: 24vh;
+    right: 6vw;
     z-index: 19;
 }
 
 .popup-04-06 {
-    bottom: -5vh;
-    right: 45vw;
+    top: 5vh;
+    right: 25vw;
     z-index: 20;
 }
 
 .popup-05-06 {
     bottom: 40vh;
-    left: -6vw;
+    right: 8vw;
     z-index: 21;
 }
 
 .popup-06-06 {
-    bottom: 2vh;
+    top: 3vh;
     right: 2vw;
     z-index: 22;
 }
 
 .popup-07-06 {
-    top: 3.5vh;
-    left: 5vw;
+    top: 11vh;
+    right: 5vw;
     z-index: 23;
 }
 
 .popup-08-06 {
-    bottom: 3vh;
-    left: 3vw;
+    top: 19vh;
+    right: 1vw;
     z-index: 24;
 }
 
 .popup-09-06 {
-    bottom: 10vh;
-    right: 5vw;
+    top: 20vh;
+    right: 15vw;
     z-index: 25;
 }
 
 .popup-10-06 {
     top: 25vh;
-    right: 35vw;
+    right: 1vw;
     z-index: 26;
 }
 
 .popup-11-06 {
     top: 50vh;
-    right: 65vw;
+    right: -4vw;
     z-index: 27;
 }
 
