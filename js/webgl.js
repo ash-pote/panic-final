@@ -12,8 +12,8 @@ const dpi = 8
 const geometry = new THREE.SphereGeometry(3.3, dpi, dpi);
 const material = new THREE.ShaderMaterial( { 
     color: 0xFF3E19,
-    vertexShader: vert,
-    fragmentShader: frag,
+    // vertexShader: vert,
+    // fragmentShader: frag,
     wireframe: true
 } );
 
