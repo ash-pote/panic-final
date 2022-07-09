@@ -444,21 +444,27 @@ main nav ul li a {
     position: absolute;
     text-decoration: underline;
     cursor: pointer;
-    color: var(--red);
+
+    color: #000000;
+    background-color: var(--red);
+    padding: 8px 16px;
+    border-radius: 16px;
 }
 
 .click-link-01 {
     top: 20vh;
     right: 10vw;
-    z-index: 10;
+    z-index: 30;
 }
 .click-link-02 {
     top: 76vh;
     left: 30vw;
+    z-index: 20;
 }
 .click-link-03 {
     top: 30vh;
     right: 50vw;
+    z-index: 30;
 }
 
 /* Eject Button */
@@ -1177,7 +1183,7 @@ main nav ul li a {
 }
 
 #countdown-overlay {
-    z-index: 2000;
+    z-index: 2000 !important; 
     /* transform: scale(0); */
     animation: overlay 0.2s linear;
 
