@@ -1213,7 +1213,7 @@ main nav ul li a {
 /* animation */
 /* Resource: https://codepen.io/charlenopires/pen/JMoxdb */
 #countdown {
-    z-index: 1000;
+    z-index: 2000;
     position: relative;
     margin: auto;
     /* margin-top: 10px; */
