@@ -1177,6 +1177,7 @@ main nav ul li a {
 }
 
 #countdown-overlay {
+    z-index: 2000;
     /* transform: scale(0); */
     animation: overlay 0.2s linear;
 
@@ -1213,7 +1214,6 @@ main nav ul li a {
 /* animation */
 /* Resource: https://codepen.io/charlenopires/pen/JMoxdb */
 #countdown {
-    z-index: 2000;
     position: relative;
     margin: auto;
     /* margin-top: 10px; */
