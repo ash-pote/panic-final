@@ -637,9 +637,9 @@ main nav ul li a {
     right: 8vw;
 }
 
-.FT88 .text-container h2 {
+/* .FT88 .text-container h2 {
     animation: flashing 0.3s step-end infinite;
-}
+} */
 
 /* Pop Up 06 */
 .unread .text-container {
@@ -775,67 +775,67 @@ main nav ul li a {
 /*************/
 
 .popup-01-03 {
-    top: 18vh;
+    top: 45vh;
     right: 64vw;
     z-index: 10;
 }
 
 .popup-02-03 {
-    top: 1.3vh;
-    right: 2vw;
+    top: 45vh;
+    right: 60vw;
     z-index: 11;
 }
 
 .popup-03-03 {
-    top: 45vh;
-    left: 13vw;
+    top: 40vh;
+    left: 33vw;
     z-index: 12;
 }
 
 .popup-04-03 {
-    bottom: 12vh;
-    right: 1.5vw;
+    bottom: 30vh;
+    right: 30vw;
     z-index: 13;
 }
 
 .popup-05-03 {
-    bottom: 11vh;
-    right: 50vw;
+    bottom: 20vh;
+    right: 42vw;
     z-index: 14;
 }
 
 .popup-06-03 {
     top: 57vh;
-    right: 10vw;
+    right: 20vw;
     z-index: 15;
 }
 
 .popup-07-03 {
-    top: 3.5vh;
-    left: 5vw;
+    top: 30vh;
+    left: 15vw;
     z-index: 15;
 }
 
 .popup-08-03 {
-    bottom: 10vh;
+    bottom: 12vh;
     right: 35vw;
     z-index: 16;
 }
 
 .popup-09-03 {
-    bottom: 10vh;
-    right: 25vw;
+    bottom: 22vh;
+    right: 20vw;
     z-index: 16;
 }
 
 .popup-10-03 {
-    top: 25vh;
-    right: 15vw;
+    top: 40vh;
+    right: 25vw;
     z-index: 16;
 }
 
 .popup-11-03 {
-    top: 25vh;
+    top: 28vh;
     right: 35vw;
     z-index: 16;
 }

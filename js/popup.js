@@ -34,6 +34,7 @@ if (!!isReducedPopUp) {
     // Paused Animation
 } else { 
     // pop up 
+
     gsap.set(".popup-01", { scale: 0})
     gsap.to(".popup-01", { duration: 0.1, scale: 1, delay: 0.5 })
 
@@ -50,7 +51,7 @@ if (!!isReducedPopUp) {
     gsap.to(".popup-04", { duration: 0.1, scale: 1, delay: 0.9 })
 
     gsap.set(".popup-05", { scale: 0})
-    gsap.to(".popup-05", { duration: 0.1, scale: 1, delay: 1.0 })
+    gsap.to(".popup-05", { duration: 0.1, scale: 1, delay: 1 })
 
     gsap.set(".click-link-02", { scale: 0})
     gsap.to(".click-link-02", { duration: 0.1, scale: 1, delay: 1.1 })
@@ -81,109 +82,106 @@ if (!!isReducedPopUp) {
 
 
 
-
     gsap.set(".popup-01-02", { scale: 0})
-    gsap.to(".popup-01-02", { duration: 0.1, scale: 1, delay: 6 })
+    gsap.to(".popup-01-02", { duration: 0.1, scale: 1, delay: 2 })
 
     gsap.set(".popup-02-02", { scale: 0})
-    gsap.to(".popup-02-02", { duration: 0.1, scale: 1, delay: 6.1 })
+    gsap.to(".popup-02-02", { duration: 0.1, scale: 1, delay: 2.1 })
 
     gsap.set(".popup-03-02", { scale: 0})
-    gsap.to(".popup-03-02", { duration: 0.1, scale: 1, delay: 6.15 })
+    gsap.to(".popup-03-02", { duration: 0.1, scale: 1, delay: 2.2 })
 
     gsap.set(".popup-04-02", { scale: 0})
-    gsap.to(".popup-04-02", { duration: 0.1, scale: 1, delay: 6.2 })
+    gsap.to(".popup-04-02", { duration: 0.1, scale: 1, delay: 2.3 })
 
     gsap.set(".popup-05-02", { scale: 0})
-    gsap.to(".popup-05-02", { duration: 0.1, scale: 1, delay: 6.25 })
+    gsap.to(".popup-05-02", { duration: 0.1, scale: 1, delay: 2.4 })
 
     gsap.set(".popup-06-02", { scale: 0})
-    gsap.to(".popup-06-02", { duration: 0.1, scale: 1, delay: 6.3 })
+    gsap.to(".popup-06-02", { duration: 0.1, scale: 1, delay: 2.5 })
 
     gsap.set(".popup-07-02", { scale: 0})
-    gsap.to(".popup-07-02", { duration: 0.1, scale: 1, delay: 6.35 })
+    gsap.to(".popup-07-02", { duration: 0.1, scale: 1, delay: 2.6 })
 
     gsap.set(".popup-08-02", { scale: 0})
-    gsap.to(".popup-08-02", { duration: 0.1, scale: 1, delay: 6.4 })
+    gsap.to(".popup-08-02", { duration: 0.1, scale: 1, delay: 2.7 })
 
     gsap.set(".popup-09-02", { scale: 0})
-    gsap.to(".popup-09-02", { duration: 0.1, scale: 1, delay: 6.45 })
+    gsap.to(".popup-09-02", { duration: 0.1, scale: 1, delay: 2.8 })
 
     gsap.set(".popup-10-02", { scale: 0})
-    gsap.to(".popup-10-02", { duration: 0.1, scale: 1, delay: 6.5 })
+    gsap.to(".popup-10-02", { duration: 0.1, scale: 1, delay: 2.9 })
 
     gsap.set(".popup-11-02", { scale: 0})
-    gsap.to(".popup-11-02", { duration: 0.1, scale: 1, delay: 6.55 })
+    gsap.to(".popup-11-02", { duration: 0.1, scale: 1, delay: 3 })
 
     //////////////////////////////
 
     gsap.set(".popup-01-03", { scale: 0})
-    gsap.to(".popup-01-03", { duration: 0.1, scale: 1, delay: 6.6 })
+    gsap.to(".popup-01-03", { duration: 0.1, scale: 1, delay: 5 })
 
     gsap.set(".popup-02-03", { scale: 0})
-    gsap.to(".popup-02-03", { duration: 0.1, scale: 1, delay: 6.65 })
+    gsap.to(".popup-02-03", { duration: 0.1, scale: 1, delay: 5.1 })
 
     gsap.set(".popup-03-03", { scale: 0})
-    gsap.to(".popup-03-03", { duration: 0.1, scale: 1, delay: 6.7 })
+    gsap.to(".popup-03-03", { duration: 0.1, scale: 1, delay: 5.2 })
 
     gsap.set(".popup-04-03", { scale: 0})
-    gsap.to(".popup-04-03", { duration: 0.1, scale: 1, delay: 6.75 })
+    gsap.to(".popup-04-03", { duration: 0.1, scale: 1, delay: 5.3 })
 
     gsap.set(".popup-05-03", { scale: 0})
-    gsap.to(".popup-05-03", { duration: 0.1, scale: 1, delay: 6.8 })
+    gsap.to(".popup-05-03", { duration: 0.1, scale: 1, delay: 5.4 })
 
     gsap.set(".popup-06-03", { scale: 0})
-    gsap.to(".popup-06-03", { duration: 0.1, scale: 1, delay: 6.85 })
+    gsap.to(".popup-06-03", { duration: 0.1, scale: 1, delay: 5.5 })
 
     gsap.set(".popup-07-03", { scale: 0})
-    gsap.to(".popup-07-03", { duration: 0.1, scale: 1, delay: 6.9 })
+    gsap.to(".popup-07-03", { duration: 0.1, scale: 1, delay: 5.6 })
 
     gsap.set(".popup-08-03", { scale: 0})
-    gsap.to(".popup-08-03", { duration: 0.1, scale: 1, delay: 6.95 })
+    gsap.to(".popup-08-03", { duration: 0.1, scale: 1, delay: 5.7 })
 
     gsap.set(".popup-09-03", { scale: 0})
-    gsap.to(".popup-09-03", { duration: 0.1, scale: 1, delay: 7 })
+    gsap.to(".popup-09-03", { duration: 0.1, scale: 1, delay: 5.8 })
 
     gsap.set(".popup-10-03", { scale: 0})
-    gsap.to(".popup-10-03", { duration: 0.1, scale: 1, delay: 7.5 })
+    gsap.to(".popup-10-03", { duration: 0.1, scale: 1, delay: 5.9 })
 
     gsap.set(".popup-11-03", { scale: 0})
-    gsap.to(".popup-11-03", { duration: 0.1, scale: 1, delay: 8 })
+    gsap.to(".popup-11-03", { duration: 0.1, scale: 1, delay: 6 })
 
-    //////////////////////////////
+    gsap.set(".popup-01-04", { scale: 0})
+    gsap.to(".popup-01-04", { duration: 0.1, scale: 1.3, delay: 6.1 })
 
-    // gsap.set(".popup-01-04", { scale: 0})
-    // gsap.to(".popup-01-04", { duration: 0.1, scale: 1.3, delay: 8.5 })
+    gsap.set(".popup-02-04", { scale: 0})
+    gsap.to(".popup-02-04", { duration: 0.1, scale: 1, delay: 6.2 })
 
-    // gsap.set(".popup-02-04", { scale: 0})
-    // gsap.to(".popup-02-04", { duration: 0.1, scale: 1, delay: 9 })
+    gsap.set(".popup-03-04", { scale: 0})
+    gsap.to(".popup-03-04", { duration: 0.1, scale: 1, delay: 6.3 })
 
-    // gsap.set(".popup-03-04", { scale: 0})
-    // gsap.to(".popup-03-04", { duration: 0.1, scale: 1, delay: 9.5 })
+    gsap.set(".popup-04-04", { scale: 0})
+    gsap.to(".popup-04-04", { duration: 0.1, scale: 1, delay: 6.4 })
 
-    // gsap.set(".popup-04-04", { scale: 0})
-    // gsap.to(".popup-04-04", { duration: 0.1, scale: 1, delay: 10 })
+    gsap.set(".popup-05-04", { scale: 0})
+    gsap.to(".popup-05-04", { duration: 0.1, scale: 1, delay: 6.5 })
 
-    // gsap.set(".popup-05-04", { scale: 0})
-    // gsap.to(".popup-05-04", { duration: 0.1, scale: 1, delay: 10.5 })
+    gsap.set(".popup-06-04", { scale: 0})
+    gsap.to(".popup-06-04", { duration: 0.1, scale: 1, delay: 6.6 })
 
-    // gsap.set(".popup-06-04", { scale: 0})
-    // gsap.to(".popup-06-04", { duration: 0.1, scale: 1, delay: 11 })
+    gsap.set(".popup-07-04", { scale: 0})
+    gsap.to(".popup-07-04", { duration: 0.1, scale: 1, delay: 6.7 })
 
-    // gsap.set(".popup-07-04", { scale: 0})
-    // gsap.to(".popup-07-04", { duration: 0.1, scale: 1, delay: 11.5 })
+    gsap.set(".popup-08-04", { scale: 0})
+    gsap.to(".popup-08-04", { duration: 0.1, scale: 1, delay: 6.8 })
 
-    // gsap.set(".popup-08-04", { scale: 0})
-    // gsap.to(".popup-08-04", { duration: 0.1, scale: 1, delay: 12 })
+    gsap.set(".popup-09-04", { scale: 0})
+    gsap.to(".popup-09-04", { duration: 0.1, scale: 1, delay: 6.9 })
 
-    // gsap.set(".popup-09-04", { scale: 0})
-    // gsap.to(".popup-09-04", { duration: 0.1, scale: 1, delay: 12.5 })
+    gsap.set(".popup-10-04", { scale: 0})
+    gsap.to(".popup-10-04", { duration: 0.1, scale: 1, delay: 7 })
 
-    // gsap.set(".popup-10-04", { scale: 0})
-    // gsap.to(".popup-10-04", { duration: 0.1, scale: 1, delay: 13 })
-
-    // gsap.set(".popup-11-04", { scale: 0})
-    // gsap.to(".popup-11-04", { duration: 0.1, scale: 1, delay: 13.5 })
+    gsap.set(".popup-11-04", { scale: 0})
+    gsap.to(".popup-11-04", { duration: 0.1, scale: 1, delay: 7.1 })
 
     //////////////////////////////
 
