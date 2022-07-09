@@ -440,6 +440,7 @@ main nav ul li a {
 /* Pop Up Section */
 /* Click Link */
 .click-link {
+    opacity: 0;
     font-family: 'IBM Plex Mono', monospace;
     position: absolute;
     text-decoration: underline;
@@ -523,6 +524,7 @@ main nav ul li a {
 /*********************************************/
 /* Pop Up General Style */
 .popup {
+    opacity: 0;
     position: absolute;
     cursor: pointer;
 
