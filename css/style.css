@@ -103,6 +103,27 @@
     }
 }
 
+@keyframes mint {
+    0% {
+        transform: rotate(6deg);
+    }
+    20% {
+        transform: rotate(-6deg);
+    }
+    40% {
+        transform: rotate(6deg);
+    }
+    60% {
+        transform: rotate(-6deg);
+    }
+    80% {
+        transform: rotate(6deg);
+    }
+    100% {
+        transform: rotate(-6deg);
+    }
+}
+
 /*********************************************/
 /* Global Styles */
 /*********************************************/
@@ -554,6 +575,16 @@ main nav ul li a {
     cursor: pointer;
 }
 
+.mint .text-container {
+    font-family: "PicNic";
+    font-style: italic;
+    flex-direction: column;
+
+    font-size: 72px;
+
+    padding: 1.5vw 4vw 2.5vw 2.4vw;
+}
+
 /* Pop Up 01 */
 .reply-ibm .text-container {
     font-size: 2.3vw;
@@ -984,6 +1015,12 @@ main nav ul li a {
     z-index: 27;
 }
 
+.popup-12-05 {
+    top: 15vh;
+    right: 5vw;
+    z-index: 27;
+}
+
 /***** Top Right ********/
 
 .popup-01-06 {
@@ -1052,8 +1089,13 @@ main nav ul li a {
     z-index: 38;
 }
 
-/***** Bottom Right ********/
+.popup-12-06 {
+    top: 12vh;
+    right: 3vw;
+    z-index: 39;
+}
 
+/***** Bottom Right ********/
 .popup-01-07 {
     bottom: 4vh;
     right: 4vw;
@@ -1118,6 +1160,18 @@ main nav ul li a {
     bottom: 35vh;
     right: -4vw;
     z-index: 38;
+}
+
+
+
+.popup-12-07 {
+    top: 12vh;
+    right: 3vw;
+    z-index: 160;
+}
+
+.mint .text-container h2 {
+    animation: mint 4.5s infinite alternate-reverse ease-in-out;
 }
 
 /************************************/
