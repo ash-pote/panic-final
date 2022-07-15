@@ -183,6 +183,9 @@ if (!!isReducedPopUp) {
     gsap.set(".popup-11-04", { opacity: 0, scale: 0})
     gsap.to(".popup-11-04", { opacity: 1, duration: 0.1, scale: 1, delay: 7.1 })
 
+    gsap.set(".popup-12-04", { opacity: 0, scale: 0})
+    gsap.to(".popup-12-04", { opacity: 1, duration: 0.1, scale: 1, delay: 11 })
+
     //////////////////////////////
 
     gsap.set(".popup-01-05", { opacity: 0, scale: 0})
@@ -217,6 +220,9 @@ if (!!isReducedPopUp) {
 
     gsap.set(".popup-11-05", { opacity: 0, scale: 0})
     gsap.to(".popup-11-05", { opacity: 1, duration: 0.1, scale: 1, delay: 11 })
+
+    gsap.set(".popup-12-05", { opacity: 0, scale: 0})
+    gsap.to(".popup-12-05", { opacity: 1, duration: 0.1, scale: 1, delay: 11 })
 
     ////////////// top right ////////////////
 

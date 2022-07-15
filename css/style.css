@@ -947,6 +947,12 @@ main nav ul li a {
     z-index: 27;
 }
 
+.popup-12-04 {
+    top: 48vh;
+    right: 70vw;
+    z-index: 27;
+}
+
 /*************/
 
 .popup-01-05 {
@@ -1016,8 +1022,8 @@ main nav ul li a {
 }
 
 .popup-12-05 {
-    top: 15vh;
-    right: 5vw;
+    top: 32vh;
+    right: 73vw;
     z-index: 27;
 }
 
@@ -1162,11 +1168,9 @@ main nav ul li a {
     z-index: 38;
 }
 
-
-
 .popup-12-07 {
-    top: 12vh;
-    right: 3vw;
+    top: 85vh;
+    right: 34vw;
     z-index: 160;
 }
 
