@@ -838,6 +838,12 @@ main nav ul li a {
     z-index: 16;
 }
 
+.popup-11-02 {
+    top: 20vh;
+    right: 30vw;
+    z-index: 17;
+}
+
 /*************/
 
 .popup-01-03 {
@@ -1213,18 +1219,33 @@ main nav ul li a {
     width: 19vw;
     height: 13vw;
     border: 1px solid #ab250a;
+
+    z-index: 17;
 }
 
-.popup-17 .text-container {
+.popup-17 .text-container  {
     height: 100%;
     z-index: 10;
 }
 
-.popup-17 .pop-canvas {
+.popup-17 .pop-canvas, .popup-17-02 .pop-canvas {
     height: 100%;
     width: 100%;
-    
-    z-index: 9;
+}
+
+.popup-17-02 {
+    top: 50vh;
+    right: 52vw;
+    width: 19vw;
+    height: 13vw;
+    border: 1px solid #ab250a;
+
+    z-index: 24;
+}
+
+.popup-17-02 .text-container {
+    height: 100%;
+    z-index: 10;
 }
 
 /* @everyone carousel */
