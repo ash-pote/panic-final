@@ -164,6 +164,13 @@ const countdownOverlay = document.querySelector('#countdown-overlay')
 
 const serverOverlay = document.querySelector('#server-overlay')
 
+const body = document.querySelector('body')
+
+// Page Shake
+ejectBtn.addEventListener("click", function () {
+    gsap.to(body, 0.1, {x:"+=20", yoyo:true, repeat: 10})
+})
+
 setInterval( function(){ 
     ejectBtn.addEventListener("click", function () {
         countdownOverlay.style.display = 'flex'
@@ -194,7 +201,7 @@ setInterval( function(){
             }
         }
     })
-},10000);
+}, 10000);
 
 //////////////////////////////////////////
 // Flag
