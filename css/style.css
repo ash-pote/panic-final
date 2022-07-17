@@ -124,6 +124,27 @@
     }
 }
 
+@keyframes ejectMove {
+	0% {
+		transform: translate(0vw, 0vh);
+	}
+	20% {
+		transform: translate(-10vw, -45vh);
+	}
+	40% {
+		transform: translate(-40vw, 20vh);
+	}
+	60% {
+		transform: translate(20vw, 30vh);
+	}
+	80% {
+		transform: translate(-20vw, -21vh);
+	}
+	100% {
+		transform: translate(1vw, 1vh);
+	}
+}
+
 /*********************************************/
 /* Global Styles */
 /*********************************************/
@@ -492,12 +513,16 @@ main nav ul li a {
 /* Eject Button */
 /* resource: https://codepen.io/kathykato/pen/gOOjgmP */
 #pop-up-section .eject-btn {
+    animation: ejectMove 10s infinite;
+    animation-direction: alternate;
+	animation-timing-function: linear;
+
     /* font-family: "Squarevetica"; */
     font-size: 46px;
     padding: 8px 40px;
     position: absolute;
-    top: 46vh;
-    left: 47vw;
+    /* top: 46vh;
+    left: 47vw; */
     border: none;
     border-radius: 30px;
     background-color: var(--red);
@@ -626,6 +651,8 @@ main nav ul li a {
     font-family: "PicNic";
     font-style: italic;
     flex-direction: column;
+    text-align: center;
+    width: 25vw;
 
     padding: 0.3vw 2vw 1vw 1vw;
 }
@@ -839,7 +866,7 @@ main nav ul li a {
 
 .popup-05-03 {
     bottom: 20vh;
-    right: 42vw;
+    right: 3vw;
     z-index: 14;
 }
 
@@ -1127,8 +1154,8 @@ main nav ul li a {
 }
 
 .popup-05-07 {
-    bottom: 40vh;
-    right: 18vw;
+    bottom: 2vh;
+    right: 2vw;
     z-index: 32;
 }
 
@@ -1163,8 +1190,8 @@ main nav ul li a {
 }
 
 .popup-11-07 {
-    bottom: 35vh;
-    right: -4vw;
+    top: -1vh;
+    left: 4vw;
     z-index: 38;
 }
 

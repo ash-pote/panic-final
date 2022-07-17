@@ -1,3 +1,5 @@
+
+
 // const audio = document.getElementById("my_audio");
 // window.addEventListener('load', (event) => {
 //     audio.play()
@@ -162,35 +164,37 @@ const countdownOverlay = document.querySelector('#countdown-overlay')
 
 const serverOverlay = document.querySelector('#server-overlay')
 
-ejectBtn.addEventListener("click", function () {
-    countdownOverlay.style.display = 'flex'
-
-    // Countdown Number Animation
-    let countdownNumberEl = document.getElementById('countdown-number');
-    let countdown = 5;
-
-    countdownNumberEl.textContent = countdown;
+setInterval( function(){ 
+    ejectBtn.addEventListener("click", function () {
+        countdownOverlay.style.display = 'flex'
     
-    const countdownInterval = setInterval(countdownTimer, 1000);
-
-    function stopInterval() {
-        clearInterval(countdownInterval);
-      }
-
-    function countdownTimer () {
-        if (countdown === 0) {
-            stopInterval()
-
-            countdownOverlay.style.display = 'none'
-
-            serverOverlay.style.display = 'flex'
-        } else {
-            countdown = --countdown <= -1 ? 5 : countdown;
-
-            countdownNumberEl.textContent = countdown;
+        // Countdown Number Animation
+        let countdownNumberEl = document.getElementById('countdown-number');
+        let countdown = 5;
+    
+        countdownNumberEl.textContent = countdown;
+        
+        const countdownInterval = setInterval(countdownTimer, 1000);
+    
+        function stopInterval() {
+            clearInterval(countdownInterval);
+          }
+    
+        function countdownTimer () {
+            if (countdown === 0) {
+                stopInterval()
+    
+                countdownOverlay.style.display = 'none'
+    
+                serverOverlay.style.display = 'flex'
+            } else {
+                countdown = --countdown <= -1 ? 5 : countdown;
+    
+                countdownNumberEl.textContent = countdown;
+            }
         }
-    }
-})
+    })
+},5000);
 
 //////////////////////////////////////////
 // Flag
