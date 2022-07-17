@@ -170,7 +170,7 @@ setInterval( function(){
     
         // Countdown Number Animation
         let countdownNumberEl = document.getElementById('countdown-number');
-        let countdown = 5;
+        let countdown = 10;
     
         countdownNumberEl.textContent = countdown;
         
@@ -188,7 +188,7 @@ setInterval( function(){
     
                 serverOverlay.style.display = 'flex'
             } else {
-                countdown = --countdown <= -1 ? 5 : countdown;
+                countdown = --countdown <= -1 ? 10 : countdown;
     
                 countdownNumberEl.textContent = countdown;
             }
