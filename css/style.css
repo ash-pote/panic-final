@@ -612,13 +612,17 @@ main nav ul li a {
 
 /* Pop Up 01 */
 .reply-ibm .text-container {
-    font-size: 2.3vw;
+    font-size: 1.4vw;
     font-family: 'IBM Plex Mono', monospace;
-    font-weight: 700;
+    font-weight: 500;
     font-style: italic;
 
-    padding: 0.5vw 1vw;
+    padding: 1vw 1vw;
     flex-direction: column;
+}
+
+.reply-ibm .text-container .scam {
+    font-size: 3vw;
 }
 
 .popup-01 {
@@ -1228,7 +1232,7 @@ main nav ul li a {
     z-index: 10;
 }
 
-.popup-17 .pop-canvas, .popup-17-02 .pop-canvas {
+.popup-17 .pop-canvas {
     height: 100%;
     width: 100%;
 }
@@ -1236,16 +1240,22 @@ main nav ul li a {
 .popup-17-02 {
     top: 50vh;
     right: 52vw;
-    width: 19vw;
+    width: 220px;
+    border: none;
+    /* width: 19vw;
     height: 13vw;
-    border: 1px solid #ab250a;
+    border: 1px solid #ab250a; */
 
     z-index: 24;
 }
 
-.popup-17-02 .text-container {
+/* .popup-17-02 .text-container {
     height: 100%;
     z-index: 10;
+} */
+
+.popup-17-02 .text-container img {
+    width: 100% !important;
 }
 
 /* @everyone carousel */
