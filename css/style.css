@@ -1218,11 +1218,12 @@ main nav ul li a {
 /************************************/
 /* Canvas Pop Ups */
 .popup-17 {
-    top: 30vh;
-    right: 14vw;
-    width: 19vw;
-    height: 13vw;
-    border: 1px solid #ab250a;
+    position: absolute;
+    top: 20vh;
+    right: 10vw;
+    width: 14.5vw;
+    height: 16vw;
+    /* border: 1px solid #ab250a; */
 
     z-index: 17;
 }
@@ -1240,7 +1241,7 @@ main nav ul li a {
 .popup-17-02 {
     top: 50vh;
     right: 52vw;
-    width: 220px;
+    width: 170px;
     border: none;
     /* width: 19vw;
     height: 13vw;
