@@ -9,8 +9,8 @@ tongueImagePop.innerHTML = ""
 
 // set up a pix applicatiom
 const app = new PIXI.Application({
-    width: 170,
-    height: 170,
+    width: 148,
+    height: 148,
     transparent: true
 })
 
@@ -32,10 +32,10 @@ loader.load((loader, resources) => {
     image = new PIXI.Sprite(resources.image.texture)
     displacementImage = new PIXI.Sprite(resources.displacement.texture)
 
-    image.x = 90
-    image.y = 90
-    image.width = 180
-    image.height = 180
+    image.x = 80
+    image.y = 80
+    image.width = 160
+    image.height = 160
     image.interactive = true
 
     image.anchor.x = 0.5
