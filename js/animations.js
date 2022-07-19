@@ -26,7 +26,7 @@ const loader = new PIXI.loaders.Loader()
 
 // load in our image
 loader.add("image", tongueImageSource)
-loader.add("displacement", "/img/displacement3.jpg")
+loader.add("displacement", "/img/displacement2.jpg")
 loader.load((loader, resources) => {
     // once the image has loaded, now do things
     image = new PIXI.Sprite(resources.image.texture)
@@ -34,8 +34,8 @@ loader.load((loader, resources) => {
 
     image.x = 110
     image.y = 110
-    image.width = 220
-    image.height = 220
+    image.width = 240
+    image.height = 240
     image.interactive = true
 
     image.anchor.x = 0.5
@@ -47,7 +47,7 @@ loader.load((loader, resources) => {
 
     image.filters = [
         // new PIXI.filters.BlurFilter(50, 5),
-        new PIXI.filters.DisplacementFilter(displacementImage, 4)
+        new PIXI.filters.DisplacementFilter(displacementImage, 3)
     ]
 
     // add image to the app
@@ -57,7 +57,7 @@ loader.load((loader, resources) => {
     // add some rotation
     app.ticker.add(() => {
         // displacementImage.x = displacementImage.x + 1
-        displacementImage.y = displacementImage.y + 0.14
+        displacementImage.y = displacementImage.y + 0.8
     })
 })
 
