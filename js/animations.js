@@ -1,3 +1,66 @@
+// Melting Image
+const tongueImagePop = document.querySelector(".popup-17-02")
+const tongueImage = document.querySelector(".popup-17-02 img")
+const tongueImageSource  = tongueImage.getAttribute("src")
+
+console.log(tongueImage)
+
+tongueImagePop.innerHTML = ""
+
+// set up a pix applicatiom
+const app = new PIXI.Application({
+    width: 220,
+    height: 220,
+    transparent: true
+})
+
+// add the pixi application to the section tag
+tongueImagePop.appendChild(app.view)
+
+// make a new image
+let image = null
+let displacementImage = null
+
+// make a new loader
+const loader = new PIXI.loaders.Loader()
+
+// load in our image
+loader.add("image", tongueImageSource)
+loader.add("displacement", "/img/displacement3.jpg")
+loader.load((loader, resources) => {
+    // once the image has loaded, now do things
+    image = new PIXI.Sprite(resources.image.texture)
+    displacementImage = new PIXI.Sprite(resources.displacement.texture)
+
+    image.x = 110
+    image.y = 110
+    image.width = 220
+    image.height = 220
+    image.interactive = true
+
+    image.anchor.x = 0.5
+    image.anchor.y = 0.5
+
+    displacementImage.width = 80
+    displacementImage.height = 80
+    displacementImage.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT
+
+    image.filters = [
+        // new PIXI.filters.BlurFilter(50, 5),
+        new PIXI.filters.DisplacementFilter(displacementImage, 4)
+    ]
+
+    // add image to the app
+    app.stage.addChild(image)
+    app.stage.addChild(displacementImage)
+
+    // add some rotation
+    app.ticker.add(() => {
+        // displacementImage.x = displacementImage.x + 1
+        displacementImage.y = displacementImage.y + 0.14
+    })
+})
+
 
 
 // const audio = document.getElementById("my_audio");
