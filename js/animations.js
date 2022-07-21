@@ -262,8 +262,12 @@ setInterval( function(){
     })
 }, 10000);
 
-// Page Shake
+// Page Shake & audio
+var pingSound = document.getElementById("my_audio");
+
 ejectBtn.addEventListener("click", function () {
+    pingSound.play()
+
     gsap.set(body, {x:"0"})
     gsap.to(body, 0.1, {x:"-=20", yoyo:true, repeat: 9})
     gsap.to(body, 0.1, {x:"0"})
