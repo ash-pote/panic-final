@@ -233,6 +233,10 @@ const body = document.querySelector('body')
 setInterval( function(){ 
     ejectBtn.addEventListener("click", function () {
         countdownOverlay.style.display = 'flex'
+
+        gsap.set(body, {x:"0"})
+        gsap.to(body, 0.1, {x:"-=20", yoyo:true, repeat: 100, duration: 20})
+        gsap.to(body, 0.1, {x:"+=20", yoyo:true, repeat: 100, duration: 20})
     
         // Countdown Number Animation
         let countdownNumberEl = document.getElementById('countdown-number');
@@ -268,9 +272,13 @@ var pingSound = document.getElementById("my_audio");
 ejectBtn.addEventListener("click", function () {
     pingSound.play()
 
-    gsap.set(body, {x:"0"})
-    gsap.to(body, 0.1, {x:"-=20", yoyo:true, repeat: 9})
-    gsap.to(body, 0.1, {x:"0"})
+    // if (countdownOverlay.style.display === 'none') {
+    //     gsap.set(body, {x:"0"})
+    //     gsap.to(body, 0.1, {x:"-=20", yoyo:true, repeat: 9})
+    //     gsap.to(body, 0.1, {x:"0"})
+    // } else {
+    //     gsap.set(body, {x:"0"})
+    // }
 })
 
 //////////////////////////////////////////
