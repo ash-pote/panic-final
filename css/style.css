@@ -866,7 +866,7 @@ main nav ul li a {
     bottom: 12vh;
     right: 14vw;
     z-index: 18;
-    position: relative;
+    /* position: relative; */
     perspective: 20000px;
 
     transform: rotateY(80deg);
