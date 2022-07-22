@@ -271,7 +271,7 @@ setInterval( function() {
             }
         }
     })
-}, 1000); // only works after 10 secs
+}, 20000); // only works after 10 secs
 
 // Page Shake & audio
 var pingSound = document.getElementById("my_audio");

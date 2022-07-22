@@ -34,7 +34,6 @@ if (!!isReducedPopUp) {
     // Paused Animation
 } else { 
     // pop up 
-
     gsap.set(".popup-01", { opacity: 0, scale: 0, })
     gsap.to(".popup-01", { opacity: 1, duration: 0.1, scale: 1, delay: 0.5 })
 
@@ -116,6 +115,9 @@ if (!!isReducedPopUp) {
     gsap.set(".popup-17", { opacity: 0, scale: 0})
     gsap.to(".popup-17", { opacity: 1, duration: 0.1, scale: 1, delay: 1.2 })
 
+    gsap.set(".popup-17-02", { opacity: 0, scale: 0})
+    gsap.to(".popup-17-02", { opacity: 1, duration: 0.1, scale: 1, delay: 1.3 })
+
     //////////////////////////////
 
     gsap.set(".popup-01-03", { opacity: 0, scale: 0})
@@ -153,9 +155,6 @@ if (!!isReducedPopUp) {
 
     gsap.set(".popup-01-04", { opacity: 0, scale: 0})
     gsap.to(".popup-01-04", { opacity: 1, duration: 0.1, scale: 1.3, delay: 6.1 })
-
-    gsap.set(".popup-17-02", { opacity: 0, scale: 0})
-    gsap.to(".popup-17-02", { opacity: 1, duration: 0.1, scale: 1, delay: 6.15 })
 
     gsap.set(".popup-02-04", { opacity: 0, scale: 0})
     gsap.to(".popup-02-04", { opacity: 1, duration: 0.1, scale: 1, delay: 6.2 })
@@ -303,6 +302,9 @@ if (!!isReducedPopUp) {
 
     gsap.set(".popup-12-07", { opacity: 0, scale: 0})
     gsap.to(".popup-12-07", { opacity: 1, duration: 0.1, scale: 1, delay: 17.1 })
+
+    gsap.set(".popup-17-03", { opacity: 0, scale: 0})
+    gsap.to(".popup-17-03", { opacity: 1, duration: 0.1, scale: 1, delay: 17.2 })
  }
 }
 

@@ -1272,17 +1272,12 @@ main nav ul li a {
     position: absolute;
     top: 20vh;
     right: 16vw;
-    width: 148px;
-    height: 148px;
+    width: 200px;
+    height: 120px;
     border: none;
     /* border: 1px solid #ab250a; */
 
     z-index: 17;
-}
-
-.popup-17 .text-container  {
-    height: 100%;
-    z-index: 10;
 }
 
 .popup-17 .pop-canvas {
@@ -1290,22 +1285,37 @@ main nav ul li a {
     width: 100%;
 }
 
-.popup-17-02 {
-    top: 50vh;
-    right: 52vw;
-    width: 148px;
+.popup-17-03 {
+    position: absolute;
+    bottom: 25vh;
+    right: 21vw;
+    width: 160px;
+    height: 160px;
     border: none;
-    /* width: 19vw;
-    height: 13vw;
-    border: 1px solid #ab250a; */
 
-    z-index: 24;
+    z-index: 40;
 }
 
-/* .popup-17-02 .text-container {
+.popup-17-03 .pop-canvas {
+    height: 100%;
+    width: 100%;
+}
+
+.popup-17-02 {
+    position: absolute;
+    bottom: 45vh;
+    right: 53vw;
+    width: 148px;
+    height: 148px;
+    border: none;
+
+    z-index: 15;
+}
+
+.popup-17-02 .text-container {
     height: 100%;
     z-index: 10;
-} */
+}
 
 .popup-17-02 .text-container img {
     width: 100% !important;
