@@ -229,14 +229,12 @@ const serverOverlay = document.querySelector('#server-overlay')
 
 const body = document.querySelector('body')
 
+let ejectTl = gsap.timeline({repeat: 6});
 
-setInterval( function(){ 
+// only works after 10 secs
+setInterval( function() { 
     ejectBtn.addEventListener("click", function () {
         countdownOverlay.style.display = 'flex'
-
-        gsap.set(body, {x:"0"})
-        gsap.to(body, 0.1, {x:"-=20", yoyo:true, repeat: 100, duration: 20})
-        gsap.to(body, 0.1, {x:"+=20", yoyo:true, repeat: 100, duration: 20})
     
         // Countdown Number Animation
         let countdownNumberEl = document.getElementById('countdown-number');
@@ -261,24 +259,30 @@ setInterval( function(){
                 countdown = --countdown <= -1 ? 10 : countdown;
     
                 countdownNumberEl.textContent = countdown;
+
+                ejectTl.clear()
+
+                // eject shake
+                var ejectTlCountdown = gsap.timeline({repeat: 10});
+
+                ejectTlCountdown.to(body, { duration: 0.05, x: 10, ease: "power4.out" })
+                ejectTlCountdown.to(body, { duration: 0.05, x: -10, ease: "power4.out" })
+                ejectTlCountdown.to(body, { duration: 0.05, x: 0, ease: "power4.out" })
             }
         }
     })
-}, 10000);
+}, 1000); // only works after 10 secs
 
 // Page Shake & audio
 var pingSound = document.getElementById("my_audio");
 
 ejectBtn.addEventListener("click", function () {
-    pingSound.play()
+    // pingSound.play()
 
-    // if (countdownOverlay.style.display === 'none') {
-    //     gsap.set(body, {x:"0"})
-    //     gsap.to(body, 0.1, {x:"-=20", yoyo:true, repeat: 9})
-    //     gsap.to(body, 0.1, {x:"0"})
-    // } else {
-    //     gsap.set(body, {x:"0"})
-    // }
+    // eject shake
+    ejectTl.to(body, { duration: 0.05, x: 10, ease: "linear" })
+    ejectTl.to(body, { duration: 0.05, x: -10, ease: "linear" })
+    ejectTl.to(body, { duration: 0.05, x: 0, ease: "linear" })
 })
 
 //////////////////////////////////////////
