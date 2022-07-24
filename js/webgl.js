@@ -47,6 +47,7 @@ const bodyTag = document.querySelector("body")
 bodyTag.appendChild(renderer.domElement)
 
 const scene = new THREE.Scene()
+const clock = new THREE.Clock()
 
 // add some lighting
 const ambientLight = new THREE.AmbientLight(0x777777)
@@ -116,8 +117,25 @@ const makeCylinder = function (width, color) {
 
 
 const sphere = makeSphere()
-const ring1 = makeRing(100, 0xF52700)
+// animate sphere
+const sphereTimeline = gsap.timeline({
+    repeat: -1,
+    yoyo: true,
+})
+sphereTimeline.set(sphere.position, { x: -300, y: 0 });
+sphereTimeline.to(sphere.position, { duration: 10, x: 320, y: 130, ease: "linear", delay: 2 });
+sphereTimeline.to(sphere.position, { duration: 9, x: -200, y: -200, ease: "linear" });
 
+
+const ring1 = makeRing(100, 0xF52700)
+// animate ring
+const ringOneTimeline = gsap.timeline({
+    repeat: -1,
+    yoyo: true,
+})
+ringOneTimeline.set(ring1.position, { x: 300, y: 0 });
+ringOneTimeline.to(ring1.position, { duration: 9, x: -200, y: -80, ease: "linear", delay: 5 });
+ringOneTimeline.to(ring1.position, { duration: 9, x: 300, y: 200, ease: "linear" });
 
 const cylinder = makeCylinder()
 const cylinderGroup = new THREE.Group()
@@ -125,27 +143,35 @@ cylinderGroup.add(cylinder)
 scene.add(cylinderGroup)
 
 cylinderGroup.add(cylinder)
-cylinder.translateX(120)
+// cylinder.translateX(120)
+// animate cylinder
+const cylinderTimeline = gsap.timeline({
+    repeat: -1,
+    yoyo: true,
+})
+cylinderTimeline.set(cylinder.position, { x: 300, y: -200 });
+cylinderTimeline.to(cylinder.position, { duration: 10, x: 20, y: 300, ease: "linear", delay: 6 });
+cylinderTimeline.to(cylinder.position, { duration: 8, x: -200, y: -180, ease: "linear" });
 
 
 const animate = function () {
     camera.lookAt(scene.position)
 
     // Sphere
-    sphere.rotateY(0.01)
+    sphere.rotateY(0.18)
 
-    // sphere.position.x = 300
+    // sphere.position.x = 0
 
     // Ring
-    ring1.geometry.rotateY(0.13)
-    ring1.position.x = 56
+    ring1.geometry.rotateY(0.18)
+    // ring1.position.x = 56
 
     // Cylinder
-    cylinder.geometry.rotateX(0.06)
-    cylinder.geometry.rotateY(0.06)
+    cylinder.geometry.rotateX(0.07)
+    cylinder.geometry.rotateY(0.07)
     // cylinder.position.x = 120
     // cylinderGroup.position.x = cylinderGroup * Math.sin(0.03)
-
+    cylinder.translateX(Math.sin(0.1 * 0.1 * 0.1))
 
     renderer.render(scene, camera)
 
