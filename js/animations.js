@@ -281,7 +281,7 @@ setInterval( function() {
 var pingSound = document.getElementById("my_audio");
 
 ejectBtn.addEventListener("click", function () {
-    // pingSound.play()
+    pingSound.play()
 
     // eject shake
     ejectTl.to(body, { duration: 0.05, x: 10, ease: "linear" })
