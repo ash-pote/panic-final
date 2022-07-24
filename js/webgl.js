@@ -123,7 +123,7 @@ const sphereTimeline = gsap.timeline({
     yoyo: true,
 })
 sphereTimeline.set(sphere.position, { x: -300, y: 0 });
-sphereTimeline.to(sphere.position, { duration: 10, x: 320, y: 130, ease: "linear", delay: 2 });
+sphereTimeline.to(sphere.position, { duration: 10, x: 320, y: 130, ease: "linear", delay: 1.5 });
 sphereTimeline.to(sphere.position, { duration: 9, x: -200, y: -200, ease: "linear" });
 
 
@@ -133,8 +133,8 @@ const ringOneTimeline = gsap.timeline({
     repeat: -1,
     yoyo: true,
 })
-ringOneTimeline.set(ring1.position, { x: 300, y: 0 });
-ringOneTimeline.to(ring1.position, { duration: 9, x: -200, y: -80, ease: "linear", delay: 5 });
+ringOneTimeline.set(ring1.position, { x: 330, y: 0 });
+ringOneTimeline.to(ring1.position, { duration: 9, x: -200, y: -80, ease: "linear", delay: 3 });
 ringOneTimeline.to(ring1.position, { duration: 9, x: 300, y: 200, ease: "linear" });
 
 const cylinder = makeCylinder()
@@ -150,7 +150,7 @@ const cylinderTimeline = gsap.timeline({
     yoyo: true,
 })
 cylinderTimeline.set(cylinder.position, { x: 300, y: -200 });
-cylinderTimeline.to(cylinder.position, { duration: 10, x: 20, y: 300, ease: "linear", delay: 6 });
+cylinderTimeline.to(cylinder.position, { duration: 10, x: 20, y: 300, ease: "linear", delay: 4 });
 cylinderTimeline.to(cylinder.position, { duration: 8, x: -200, y: -180, ease: "linear" });
 
 

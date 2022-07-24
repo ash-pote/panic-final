@@ -863,8 +863,8 @@ main nav ul li a {
 
 /* popup wagmi animation */
 .popup-wagmi {
-    bottom: 12vh;
-    right: 14vw;
+    bottom: 14vh;
+    left: 20vw;
     z-index: 18;
     /* position: relative; */
     perspective: 20000px;
@@ -1288,7 +1288,7 @@ main nav ul li a {
 .popup-17-03 {
     position: absolute;
     bottom: 25vh;
-    right: 21vw;
+    right: 8vw;
     width: 160px;
     height: 160px;
     border: none;
@@ -1303,8 +1303,8 @@ main nav ul li a {
 
 .popup-17-02 {
     position: absolute;
-    bottom: 45vh;
-    right: 53vw;
+    bottom: 48vh;
+    right: 48vw;
     width: 148px;
     height: 148px;
     border: none;

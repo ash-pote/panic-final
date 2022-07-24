@@ -109,9 +109,6 @@ if (!!isReducedPopUp) {
     // gsap.set(".popup-11-02", { opacity: 0, scale: 0})
     // gsap.to(".popup-11-02", { opacity: 1, duration: 0.1, scale: 1, delay: 3 })
 
-    gsap.set(".popup-wagmi", { opacity: 0, scale: 0})
-    gsap.to(".popup-wagmi", { opacity: 1, duration: 0.1, scale: 1, delay: 3.1 })
-
     gsap.set(".popup-17", { opacity: 0, scale: 0})
     gsap.to(".popup-17", { opacity: 1, duration: 0.1, scale: 1, delay: 1.2 })
 
@@ -234,6 +231,9 @@ if (!!isReducedPopUp) {
 
         gsap.set(".popup-01-06", { opacity: 0, scale: 0})
         gsap.to(".popup-01-06", { opacity: 1, duration: 0.1, scale: 1.3, delay: 13.1 })
+
+        gsap.set(".popup-wagmi", { opacity: 0, scale: 0 })
+        gsap.to(".popup-wagmi", { opacity: 1, duration: 0.1, scale: 1, delay: 13.2 })
     
         // gsap.set(".popup-02-06", { opacity: 0, scale: 0})
         // gsap.to(".popup-02-06", { opacity: 1, duration: 0.1, scale: 1, delay: 13.2 })
