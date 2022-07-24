@@ -38,7 +38,7 @@ if (!!isReducedPopUp) {
     // gsap.to(".popup-01", { opacity: 1, duration: 0.1, scale: 1, delay: 0.5 })
 
     gsap.set(".click-link-01", { opacity: 0, scale: 0})
-    gsap.to(".click-link-01", { opacity: 1, duration: 0.1, scale: 1, delay: 5.6 })
+    gsap.to(".click-link-01", { opacity: 1, duration: 0.1, scale: 1, delay: 8.6 })
 
     // gsap.set(".popup-02", { opacity: 0, scale: 0})
     // gsap.to(".popup-02", { opacity: 1, duration: 0.1, scale: 1, delay: 0.7 })
