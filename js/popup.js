@@ -38,7 +38,7 @@ if (!!isReducedPopUp) {
     // gsap.to(".popup-01", { opacity: 1, duration: 0.1, scale: 1, delay: 0.5 })
 
     gsap.set(".click-link-01", { opacity: 0, scale: 0})
-    gsap.to(".click-link-01", { opacity: 1, duration: 0.1, scale: 1, delay: 0.6 })
+    gsap.to(".click-link-01", { opacity: 1, duration: 0.1, scale: 1, delay: 5.6 })
 
     // gsap.set(".popup-02", { opacity: 0, scale: 0})
     // gsap.to(".popup-02", { opacity: 1, duration: 0.1, scale: 1, delay: 0.7 })
@@ -53,7 +53,7 @@ if (!!isReducedPopUp) {
     // gsap.to(".popup-05", { opacity: 1, duration: 0.1, scale: 1, delay: 1 })
 
     gsap.set(".click-link-02", { opacity: 0, scale: 0})
-    gsap.to(".click-link-02", { opacity: 1, duration: 0.1, scale: 1, delay: 1.1 })
+    gsap.to(".click-link-02", { opacity: 1, duration: 0.1, scale: 1, delay: 12.1 })
 
     // gsap.set(".popup-06", { opacity: 0, scale: 0})
     // gsap.to(".popup-06", { opacity: 1, duration: 0.1, scale: 1, delay: 1.3 })
@@ -65,7 +65,7 @@ if (!!isReducedPopUp) {
     // gsap.to(".popup-08", { opacity: 1, duration: 0.1, scale: 1, delay: 1.5 })
 
     gsap.set(".click-link-03", { opacity: 0, scale: 0})
-    gsap.to(".click-link-03", { opacity: 1, duration: 0.1, scale: 1, delay: 1.6 })
+    gsap.to(".click-link-03", { opacity: 1, duration: 0.1, scale: 1, delay: 14.6 })
 
     // gsap.set(".popup-09", { opacity: 0, scale: 0})
     // gsap.to(".popup-09", { opacity: 1, duration: 0.1, scale: 1, delay: 1.7 })
