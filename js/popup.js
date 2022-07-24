@@ -309,13 +309,25 @@ if (!!isReducedPopUp) {
 }
 
  // Pop Up Click Link Overlay
-//  const clickLink = document.querySelector('.click-link-01')
-//  const link01Overlay = document.querySelector('#link01-overlay')
-//  const link01Vid = document.querySelector('#rikroll')
+ const clickLink = document.querySelector('.click-link-01')
+ const link01Overlay = document.querySelector('#link01-overlay')
+ const link01Vid = document.querySelector('#rikroll')
 //  link01Vid.muted=true;
 
-//  clickLink.addEventListener("click", function () {
-//     link01Overlay.style.display = 'block'
-//     link01Vid.muted=false;
-//     link01Vid.play()
-//  })
+ clickLink.addEventListener("click", function () {
+    link01Overlay.style.display = 'block'
+    gsap.set(link01Overlay, { opacity: 0, scale: 0})
+    gsap.to(link01Overlay, { opacity: 1, duration: 0.2, scale: 1 })
+    // link01Vid.muted=false;
+
+    link01Vid.src = "https://player.vimeo.com/video/440418225?h=5506803932&autoplay=1"
+ })
+
+//  $(document).ready(function() {
+//     $('#play-video').on('click', function(ev) {
+   
+//       $("#video")[0].src += "&autoplay=1";
+//       ev.preventDefault();
+   
+//     });
+//   });

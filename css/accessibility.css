@@ -19,4 +19,9 @@
     svg circle {
         animation: unset;
     }
+
+    /* Find Eject Button */
+    #pop-up-section .eject-btn {
+        animation: unset;
+    }
 }

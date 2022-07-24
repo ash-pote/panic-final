@@ -1719,18 +1719,23 @@ body canvas {
 
 /* Link01 Overlay */
 #link01-overlay {
-    display: block;
-    position: absolute;
-    top: 40px;
-    height: 400px;
-    width: 400px;
-    background-color: #000000;
-    border: solid 1px #F02700;
+    display: none;
+    position: relative;
+    top: -3vh;
+    right: 1vw;
+
+
+    z-index: 200;
 }
 
-#link01-overlay video {
-    z-index: 10;
+#link01-overlay iframe {
+    width: 600px;
+    border: solid 1px #F02700;
+    background-color: #000000;
+    border-radius: 20px;
 }
+
+
 
 
 /* Orb */
