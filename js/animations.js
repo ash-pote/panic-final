@@ -233,7 +233,7 @@ const serverOverlay = document.querySelector('#server-overlay')
 
 const body = document.querySelector('body')
 
-let ejectTl = gsap.timeline({repeat: 6});
+let ejectTl = gsap.timeline({ repeat: 6 });
 
 // only works after 10 secs
 setInterval( function() { 
