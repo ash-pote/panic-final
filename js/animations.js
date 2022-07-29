@@ -90,7 +90,7 @@ loader.load((loader, resources) => {
 //   });
 
 // Health Bar Animation
-const healthbar = document.querySelectorAll('.health-bar ')
+const healthbar = document.querySelectorAll('.health-bar')
 const healthbarContainer = document.querySelectorAll('.health-bar-container')
 
 const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
@@ -235,6 +235,30 @@ const body = document.querySelector('body')
 
 let ejectTl = gsap.timeline({ repeat: 6 });
 
+// Page Shake & audio
+var pingSound = document.getElementById("my_audio");
+var backgroundPopup = document.querySelectorAll(".popup")
+
+ejectBtn.addEventListener("click", function () {
+    pingSound.play()
+
+    // eject shake
+    ejectTl.to(body, { duration: 0.05, x: 10, ease: "linear" })
+    ejectTl.to(body, { duration: 0.05, x: -10, ease: "linear" })
+    ejectTl.to(body, { duration: 0.05, x: 0, ease: "linear" })
+
+    // background colour
+
+    backgroundPopup.forEach(popUp => {
+        popUp.style.backgroundColor = "transparent"
+        popUp.style.transform = "rotate(7deg)"
+
+        setInterval( function() {
+            popUp.style.backgroundColor = "black"
+         }, 2000)
+    })
+})
+
 // only works after 10 secs
 setInterval( function() { 
     ejectBtn.addEventListener("click", function () {
@@ -264,7 +288,7 @@ setInterval( function() {
     
                 countdownNumberEl.textContent = countdown;
 
-                ejectTl.clear()
+                // ejectTl.clear()
 
                 // eject shake
                 var ejectTlCountdown = gsap.timeline({repeat: 10});
@@ -277,17 +301,7 @@ setInterval( function() {
     })
 }, 20000); // only works after 10 secs
 
-// Page Shake & audio
-var pingSound = document.getElementById("my_audio");
 
-ejectBtn.addEventListener("click", function () {
-    pingSound.play()
-
-    // eject shake
-    ejectTl.to(body, { duration: 0.05, x: 10, ease: "linear" })
-    ejectTl.to(body, { duration: 0.05, x: -10, ease: "linear" })
-    ejectTl.to(body, { duration: 0.05, x: 0, ease: "linear" })
-})
 
 //////////////////////////////////////////
 // Flag
