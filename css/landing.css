@@ -11,14 +11,8 @@
     border: 1px solid #FF3E19;
     border-radius: 10px;
     
-    width: 94vw;
-    height: 93vh;
-    padding: 56px;
-
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    height: 98.5vh;
+    width: 99.1vw;
 }
 
 #landing h1 {
